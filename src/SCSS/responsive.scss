@@ -1,0 +1,77 @@
+@media (max-width: 1050px) {
+	.container {
+		flex-direction: column;
+		padding: 1.8rem 1rem;
+		align-items: center;
+		gap: 1rem;
+		height: 95dvh;
+	}
+}
+
+@media (max-width: 750px) {
+	.container {
+		.game-box .keyboard .btn {
+			width: 50px;
+			height: 50px;
+			font-size: 1.2rem;
+		}
+		.hangman-box {
+			img {
+				max-width: 200px;
+			}
+			h1 {
+				display: none;
+			}
+		}
+
+		.game-box .word-display {
+			gap: 0.35rem;
+
+			.letter {
+				font-size: 1.5rem;
+				width: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	.container {
+		.hangman-box img {
+			max-width: 160px;
+		}
+		.game-box {
+			padding: 2rem 0;
+			.keyboard {
+				gap: 8px;
+				margin-top: 1.75rem;
+				.btn {
+					width: 40px;
+					height: 40px;
+					font-size: 1.05rem;
+				}
+			}
+
+			h4 {
+				font-size: 1rem;
+			}
+		}
+	}
+
+	.game-modal .content {
+		padding: 2rem;
+
+		img {
+			max-width: 90px;
+		}
+
+		p {
+			margin: 10px 0 20px;
+		}
+
+		button {
+			padding: 0.75rem 1rem;
+			font-size: 1.2rem;
+		}
+	}
+}
