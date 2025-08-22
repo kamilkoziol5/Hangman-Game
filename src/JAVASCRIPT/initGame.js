@@ -16,7 +16,7 @@ export default function initGame(btn, clickedLetter) {
 		});
 	} else {
 		state.wrongGuessCount++;
-		hangmanImage.src = `hangman-${state.wrongGuessCount}.svg`;
+		hangmanImage.src = `/hangman-${state.wrongGuessCount}.svg`;
 	}
 	btn.disabled = true;
 	guessCounterDiv.textContent = `${state.wrongGuessCount} / ${state.maxGuess}`;
